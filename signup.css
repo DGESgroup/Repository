@@ -12,3 +12,6 @@ form {
     width: 400px;
     margin: 0 auto;
 }
+body {
+    background-color: lightblue;
+}
