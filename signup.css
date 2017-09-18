@@ -1,0 +1,17 @@
+label  {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+h1 {
+    text-align: center;
+}
+
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+body {
+    background-color: black;
+}
