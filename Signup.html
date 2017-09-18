@@ -26,29 +26,12 @@
         <br><br>
         <label for "password">Password</label><input type="text" name="password" id="password">
         <br><br>
-        </div>
 
-        <div style="float:left;margin-right:20px;">
-            <label for "month">Enter date of birth</label>
-            <select name="month" id="month">
-                <option value="Jan">January</option>
-                <option value="Feb">February</option>
-                <option value="Mar">March</option>
-                <option value="May">May</option>
-                <option value="Jun">June</option>
-                <option value="Jul">July</option>
-                <option value="Aug">August</option>
-                <option value="Sept">September</option>
-                <option value="Oct">October</option>
-                <option value="Nov">November</option>
-                <option value="Dec">December</option>
-            </select>
-        </div>
-        <div style="float:left;margin-right:20px;">
-            <label for="day">Day</label>
-            <select name="day" id="day">
+        <div>
+            <label for="age">Age</label>
+            <select name="age" id="age">
                     <script>
-                        for (var i = 1; i <= 31; i++) {
+                        for (var i = 3; i <= 100; i++) {
                             document.write('<option value="+i+">' + i + '</option>')
                         }
                     </script>
@@ -56,19 +39,11 @@
                 </select>
         </div>
 
-        <label for="year">Year</label>
-        <select name="year" id="year">
-                    <script>
-                        for (var i = 1920; i <= 2020; i++) {
-                            document.write('<option value="+i+">' + i + '</option>')
-                        }
-                    </script>
-                </select>
         <br><br>
+
+        <div style="float:left;margin-right:20px;">
+            <input type="radio" name="type" value="type" id="type"><label for="type">Student</label>
         </div>
-<div style="float:left;margin-right:20px;">
-        <input type="radio" name="type" value="type" id="type"><label for="type">Student</label>
-    </div>
         <input type="radio" name="type" value="type" id="type"><label for="type">Teacher</label>
 
         <br><br>

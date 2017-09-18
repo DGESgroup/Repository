@@ -6,5 +6,7 @@ public class testing {
 
 	System.out.println("Did it work?");
 
+	System.out.println("I think it did");
+
 	}
 }
