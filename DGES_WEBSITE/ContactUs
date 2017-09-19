@@ -1,0 +1,76 @@
+
+<DOCTYPE html>
+<html>
+<title>Contact Us</title>
+<style>
+		body{margin: 0;
+		background-color:#333333
+		}
+
+		#header{background-color:black;
+		color:darkred;
+		padding: 25px;
+		font: bold 20px Sans-Serif; text-decoration:none;
+		text-indent: 200px
+
+		}
+
+		#header a {float:right; text-decoration:none; color:darkred;}
+
+		#main, #form{margin-right:250px; margin-top:20px;
+		margin-left:250px;
+		background-color:#fafaef;
+		padding:30px;
+		font: bold 20px Sans-Serif; text-decoration:none;
+		border: 2px solid darkred;
+		}
+
+
+		#form a {color:red;}
+
+
+		#footer{text-align:center;
+		color:red;
+		margin-bottom:25px;
+		}
+		#footer a {text-decoration:none;
+		color:#fff
+		}
+
+
+</style>
+
+
+<body>
+
+	<div id="header"><img src="logo.png" height="75">DGES.me  |  Education, <i>Today I am ready to learn <a href="#">Contact Us</a></div>
+
+
+	<div id="main"> Contact Us</div>
+
+<div id="form"> <i>Enter all fields marked with an (<a>*</a>).</i>
+	<form action="/action_page.php">
+  		First name<a>*</a>: <input type="text" name="fname"><br>
+		Last name<a>*</a>: <input type="text" name="lname"><br>
+		E-mail<a>*</a>: <input type="text" name="email"><br><br>
+		Comment<a>*</a>: <textarea> </textarea><br>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+	<div id="footer"> <p>&copy; 2017 Copyright <a href="#">DGES.me</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p></div>
+
+<body>
+
+
+
+
+</html>
