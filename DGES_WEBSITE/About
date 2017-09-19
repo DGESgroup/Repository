@@ -1,7 +1,7 @@
 
 <DOCTYPE html>
 <html lang="en">
-<title>Contact Us</title>
+<title>About</title>
 <style>
 		body{margin: 0;
 		background-color:#333333
@@ -32,16 +32,23 @@
 
 		#navigation-bar a:hover { color:darkred; font-weight:bold;}
 
-		#main, #form{margin-right:250px; margin-top:20px;
+		#main{margin-right:250px; margin-top:20px;
 		margin-left:250px;
 		background-color:#fafaef;
 		padding:30px;
 		font: bold 20px Sans-Serif; text-decoration:none;
-		border: 2px solid darkred;
+		border: 2px solid darkred; text-indent:50px;
+		}
+
+		#content{margin-right:250px; margin-top:20px;
+		margin-left:250px;
+		background-color:#fafaef;
+		padding:30px;
+		font: bold 14px Sans-Serif; text-decoration:none;
+		border: 2px solid darkred; text-indent:50px;
 		}
 
 
-		#form a {color:red;}
 
 
 		#footer{text-align:center;
@@ -69,16 +76,10 @@
 </nav>
 
 
-	<div id="main"> Contact Us</div>
+	<div id="main"> About</div>
 
-<div id="form"> <i>Enter all fields marked with an (<a>*</a>).</i>
-	<form action="/action_page.php">
-    First name<a>*</a>: <input type="text" name="fname"><br>
-		Last name<a>*</a>: <input type="text" name="lname"><br>
-		E-mail<a>*</a>: <input type="text" name="email"><br><br>
-		Comment<a>*</a>: <textarea> </textarea><br>
-		<input type="submit" value="Submit">
-	</form>
+<div id="content"> Develop Global Education System was founded in 2017 by Ani Kochiashvili in order to help students in developing countries gain access to the required resources...</i>
+
 </div>
 
 <br>
