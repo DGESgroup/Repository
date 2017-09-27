@@ -3,6 +3,7 @@
 class Student extends User {
   $type= 'Student';
   $gradeLevel;
+  $credits;
   $numberOfProjects=0;
   $myProjects  = array();
 
@@ -20,13 +21,16 @@ public function getLastName(){
 
 public function setGradeLevel($grade){
   $this->gradeLevel=$grade;
+}
 
 public function addProject(Project $p){
 $myProjects[$numberOfProjects]=$p;
 $numberOfProjects++;
 
-
 }
 
+public function searchProjects(){
+   
 }
+
 }
