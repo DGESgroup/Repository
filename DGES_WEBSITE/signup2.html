@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+<title>DGES, Inc.</title>
+
+        <!--LINKING TO MAIN CSS FILE-->
+        <link rel="stylesheet" href="styling/style.css" />
+
+      <!--LINKING TO BACKGROUND IMAGE & SETTING FONTS-->
+<style>
+
+    p.sansserif {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+body {
+
+        background-image: url("http://www.designbolts.com/wp-content/uploads/2014/03/Light-Blue-blur-background1.jpg");
+}
+
+</style>
+<script type="text/javascript">
+<!--set variables-->
+<!--function confirms that user has input values into Password and Username-->
+  function check_Info2() {
+    var uName =document.getElementById('Username').value;
+    var pWord =document.getElementById('Password').value;
+    var reType=document.getElementById('reType').value;
+    var fName=document.getElementById('FirstName').value;
+    var lName=document.getElementById('LastName').value;
+    var Phone=document.getElementById('Phone').value;
+    var email=document.getElementById('email').value;
+    var street=document.getElementById('Street').value;
+    var city=document.getElementById('City').value;
+    var state=document.getElementById('State').value;
+    if (uName ==""||fName ==""||lName ==""||Phone ==""||email ==""||street ==""||city ==""||state =="") {
+      <!--user has not filled in info,alert user-->
+      window.alert("Please fill in all fields")
+    }
+    else if (pWord.length<6) {
+      window.alert("password less than 6 characters")
+      <!--password is proper length-->
+    }
+    else if (pWord.localeCompare(reType)!=0) {
+      window.alert("Retyped password does not match")
+    }
+    <!--User has entered both fields, validate data-->
+
+
+
+
+  }
+</script>
+</head>
+
+<body>
+
+
+
+
+
+
+    <!-- MENU BAR-->
+    <div id="main">
+        <div id="header">
+            <div id="menubar">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="examples.html">About Us</a></li>
+                    <li><a href="page.html">Contact Us</a></li>
+                    <li><a href="another_page.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!--ENTERING PERSONAL INFORMATION-->
+<form action="" method="post" onsubmit="return check_Info2();">
+  Username: <input type="text" name="user" placeholder="Enter Username Here:"id="Username"><br>
+  Password: <input type="password" name="password" placeholder="At least 6 characters"id="Password">
+  Re-Enter Password: <input type="password" name="password"id="reType">
+  First Name:<br>
+  <input type="text" name="firtName"id="FirstName"><br>
+  Last Name:<br>
+  <input type="text" name="lastName"id="LastName"><br>
+  Phone Number:<br>
+  <input type="text" name="phoneNumber" place holder="123-456-7892"id="Phone"><br>
+  Email Address:<br>
+  <input type="text" name="emailAddress"id="email"><br>
+  Street Address:<br>
+  <input type="text" name="streetAddress"id="Street"><br>
+  City:<br>
+  <input type="text" name="cityName"id="City"><br>
+  State:<br>
+  <input type="text" name="stateName"id="State"><br>
+ <input type="submit" value="Sign Up"/>
+
+</form>
