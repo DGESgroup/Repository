@@ -29,9 +29,13 @@ body {
       <!--set var uName = Username value and pWord to password-->
       var uName =document.getElementById('Username').value;
       var pWord =document.getElementById('Password').value;
-      if (uName ==""||pWord<6) {
+      if (uName =="") {
         <!--user has not filled in info,alert user-->
-        alert("Please fill in all fields")
+        window.alert("Please fill in all fields")
+      }
+      else if (pWord.length<6) {
+        window.alert("password less than 6 characters")
+        <!--password is proper length-->
       }
       else{
         <!--User has entered both fields, validate data-->
@@ -72,11 +76,8 @@ body {
     <!-- ADDING A SIGN UP BUTTON-->
     <button type="button" onclick="alert('Sup')">Sign Up</button>
 
-     <!-- ADDING A SIGN UP BUTTON-->
+    <!-- ADDING A SIGN UP BUTTON-->
     <button type="button" onclick="alert('Sup')">Login</button>
-
-
-
 
     <!--ENTERING USERNAME AND PASSWORD-->
 <form action="" method="post" onsubmit="return check_Info();">
