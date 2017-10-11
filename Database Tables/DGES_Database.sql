@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 11, 2017 at 08:34 PM
+-- Generation Time: Oct 11, 2017 at 09:17 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -21,6 +21,18 @@ SET time_zone = "+00:00";
 --
 -- Database: `DGES_Database`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Chat`
+--
+
+CREATE TABLE `Chat` (
+  `Chat_ID` int(255) NOT NULL,
+  `Conv_Date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `User_Email` varchar(400) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -58,6 +70,12 @@ CREATE TABLE `Video_Files` (
 --
 
 --
+-- Indexes for table `Chat`
+--
+ALTER TABLE `Chat`
+  ADD PRIMARY KEY (`Chat_ID`);
+
+--
 -- Indexes for table `Text_Files`
 --
 ALTER TABLE `Text_Files`
@@ -72,6 +90,12 @@ ALTER TABLE `Video_Files`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `Chat`
+--
+ALTER TABLE `Chat`
+  MODIFY `Chat_ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `Text_Files`
