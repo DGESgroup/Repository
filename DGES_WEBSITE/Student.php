@@ -5,7 +5,7 @@ class Student extends User {
   $gradeLevel;
   $credits;
   $numberOfProjects=0;
-  $myProjects  = array();
+  $myProjects  = array`();
 
 
   function __construct($name, $lastName, $email, $gradeLevel){
@@ -14,7 +14,7 @@ class Student extends User {
   }
 public function getName(){
   return $this->name;
-}
+} 
 public function getLastName(){
   return $this->lastName;
 }
@@ -26,11 +26,10 @@ public function setGradeLevel($grade){
 public function addProject(Project $p){
 $myProjects[$numberOfProjects]=$p;
 $numberOfProjects++;
-
 }
 
 public function searchProjects(){
-   
+
 }
 
 }
