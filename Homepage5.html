@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>DGES, Inc.</title>
+    <style>
+    #logo {
+    	display: inline-block;
+    }
+        .nav {
+            text-align: center;
+        }
+        .nav ul {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            /* For IE, the outcast */
+            zoom:1;
+            *display: inline;
+        }
+        .nav li {
+            float: left;
+            padding: 2px 5px;
+         /*  border: 1px solid white; */
+        }
+        .nav {
+          background-color: #ed2a10
+        }
+        .header {
+          background-color: #8ecfed
+        }
+        #studentform {
+          position: absolute;
+	top: 0px;
+	width: 88%;
+	padding: 18px 6% 60px 6%;
+	margin: 0 0 35px 0;
+    /*transform: translateX(-50%);*/
+        }
+        #wrapper {
+          width: 60%;
+          	right: 0px;
+          	min-height: 560px;
+          	margin: 0px auto;
+          	width: 500px;
+          	position: relative;
+        }
+    #searchbar {
+    /*	display: inline-block;*/
+    position:absolute;
+    top:0;
+    right:0;
+    padding-top:20px;
+    padding-right:20px;
+    }
+    li {
+        display: inline;
+    }
+    /* Note to self: MUST have the a after the li/list portion, or it won't work!*/
+    ul li a {
+        letter-spacing: 0.1em;
+      font: normal 100% 'lucida sans unicode', arial, sans-serif;
+      display: block;
+      float: left;
+      height: 37px;
+      padding: 29px 26px 6px 26px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: transparent;
+    }
+    #content {
+      overflow: auto;
+    }
+    #feature, #footer {
+        margin: 1%;
+      }
+    .column1, .column2, .column3 {
+        width: 31.3%;
+        float: left;
+        margin: 1%;
+      }
+    .column3 {margin-right: 0%;
+    }
+    li {
+        display: inline;
+        padding: 0.5em;
+      }
+    #footer {
+    /*    padding: 0.5em 0;*/
+
+        text-align: center;
+      }
+    #feature, .article {
+        height: 10em;
+        margin-bottom: 1em;
+        background-color: #efefef;
+      }
+.invalid { border-color: red; }
+  #error { color: red }
+    </style>
+</head>
+  <body>
+    <div class="header">
+        <!--COMPANY LOGO-->
+        <div id="logo">
+            <img src="https://image.ibb.co/hfJtOa/DGES_LOGO.png" width="256" height="95.63" alt="DGES LOGO" border="0" />
+        </div>
+
+        <!--SEARCH BAR-->
+        <div id="searchbar">
+          <form>
+                  <input type="text" class="tftextinput" placeholder="What are you looking for?" name="txtinput" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+          </form>
+        </div>
+
+      </div>
+              <!--NAVIGATION BAR-->
+                  <div class="nav">
+                      <ul>
+                          <li><a href="http://localhost/Repository/DGES_WEBSITE/layout.html">Home</a></li>
+                          <li><a href="http://localhost/Repository/DGES_WEBSITE/sportal.html">Student Dashboard</a></li>
+                          <li><a href="http://localhost/Repository/DGES_WEBSITE/AboutUs.html">About Us</a></li>
+                          <li><a href="http://localhost/Repository/DGES_WEBSITE/ContactUs.html">Contact Us</a></li>
+
+                      </ul>
+                  </div>
+
+<!--MAIN PAGE CONTENT-->
+<div id="wrapper">
+
+      <div id="studentform">
+
+    <!--ENTERING STUDENT INFORMATION-->
+    <form action="http://localhost/Repository/Regg.php" method="post">
+
+  <label>   First Name:<br>
+     <input type="text" name="first_name"><br>
+   </label>
+
+   <div id="error"></div>
+
+  <label>   Last Name:<br>
+     <input type="text" name="last_name"><br>
+   </label>
+
+   <div id="error"></div>
+
+    <label> Phone Number:<br>
+     <input type="text" name="phone_number" place holder="123-456-7892"><br>
+   </label>
+
+<div>
+     <label> Username: <br>
+     <input type="text" name="username" id="username" placeholder="Enter Username Here:"><br>
+   </label>
+   <span id ="availability"></span>
+</div>
+
+     <label> Password: <br>
+     <input type="password" name="initial_password" placeholder="At least 6 characters"><br>
+   </label>
+
+     <label> Re-Enter Password: <br>
+     <input type="password" name="confirm_password"><br>
+   </label>
+
+
+
+
+<input type="submit" value="Submit">
+    </form>
+
+    <!--ENDING DIV TAG FOR STUDENT FORM-->
+  </div>
+
+  <!--ENDING DIV TAG FOR WRAPPER DIV-->
+</div>
+
+  <div id="footer">
+                <p>Copyright © 2017 DGES, Inc. All rights reserved.</p>
+            </div>
+
+  </body>
+
+</html>
