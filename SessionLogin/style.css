@@ -103,6 +103,19 @@ input, select {
     width: 1000px;
 }
 
+h2 {
+    font-family: arial;
+    float: left;
+}
+
+p {
+    display: inline-block;
+    text-align: left; 
+    font-family: arial; 
+    float: left;
+    margin-right: 25%;
+}
+
 a {
     text-decoration: none;
 }
@@ -127,10 +140,15 @@ header nav ul li {
 }
 
 header nav ul li a {
+    padding: 15px;
     font-family: arial;
     font-size: 16px;
     color: #111;
     line-height: 63px;
+}
+
+header nav ul li a:hover{
+    background-color: #ccc;
 }
 
 header .nav-login {
@@ -158,7 +176,7 @@ header .nav-login form input {
 
 header .nav-login form button {
     float: left;
-    width: 60px;
+    width: 70px;
     height: 30px;
     margin-right: 10px;
     border: none;
@@ -175,16 +193,22 @@ header .nav-login form button:hover {
 
 header .nav-login a {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 30px;
+    margin-top:15px;
     border: none;
     float: left;
-    background-color: #fff;
+    background-color: #f3f3f3;
     font-family: arial;
-    font-size: 16px;
+    font-size: 14px;
     color: #111;
-    line-height: 63px;
+    line-height: 30px;
     cursor: pointer;
+    text-align:center;
+}
+
+header .nav-login a:hover {
+    background-color: #ccc;
 }
 
 .main-container {
@@ -244,11 +268,11 @@ footer{
 }
 
 .footer {
-
-    height: 100px;
+    height: auto;
     margin: auto;
-    width: 400px;
+    width: 100%;
     text-align:center;
     padding:10px;
     color:#000000;
+    background-color: #fff;
 }

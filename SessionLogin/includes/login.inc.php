@@ -36,12 +36,20 @@ if (isset($_POST['submit'])) {
 					$_SESSION['u_email'] = $row['user_email'];
 					$_SESSION['u_uid'] = $row['user_uid'];
 					header("Location: ../index.php?login=success");
+					phpAlert("Success");
 					exit();
 				}
 			}
 		}
 	}
+
 } else {
 	header("Location: ../index.php?login=error");
 	exit();
 }
+
+function phpAlert($msg) {
+    echo '<script type="text/javascript">alert("' . $msg . '")</script>';
+}
+
+

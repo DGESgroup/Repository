@@ -5,14 +5,13 @@
 <section class="main-container">
 	<div class="main-wrapper">
 		<h2 text-align: left; >Welcome</h2>
-		<?php
-			if (isset($_SESSION['u_id'])) {
-				echo "You are logged in!";
-			}
-		?>
+		<p>
+			<img src="pics/0406-OLEARN-india-education.jpg">
+		</p>
 	</div>
 </section>
 
 <?php
 	include_once 'footer.php';
 ?>
+

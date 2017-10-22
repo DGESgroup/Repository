@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
 	<title>DGES.me</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -14,10 +14,10 @@
 	<nav>
 		<div class="main-wrapper">
 			<ul>
-				<li><a href="index.php">Home &nbsp; &nbsp;</a></li>
-				<li><a href="index.php"> Student Portal &nbsp; &nbsp;</a></li>
-				<li><a href="index.php">About Us &nbsp; &nbsp;</a></li>
-				<li><a href="index.php">Contact Us &nbsp;</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="studentPortal.php"> Student Portal</a></li>
+				<li><a href="About.php">About Us</a></li>
+				<li><a href="contact.php">Contact Us</a></li>
 
 			</ul>
 			<div class="nav-login">
@@ -26,6 +26,7 @@
 						echo '<form action="includes/logout.inc.php" method="POST">
 							<button type="submit" name="submit">Logout</button>
 						</form>';
+						echo "Welcome {$_SESSION['u_first']}";
 					} else {
 						echo '<form action="includes/login.inc.php" method="POST">
 							<input type="text" name="uid" placeholder="Username/e-mail">
